@@ -321,6 +321,7 @@
 
       <!-- Linux -->
       <compiler name="gcc" debug="${jni.debug}" if="linux">
+        <compilerarg value="-fgnu89-inline" />
         <compilerarg value="-O2" if="jni.optim"/>
         <compilerarg value="-g" if="jni.debug"/>
         <compilerarg value="-Wall"/>
